@@ -6,7 +6,7 @@
     <link rel="icon" href="https://i.ibb.co/2KKdtZk/profile-pic.jpg" type="lo.png"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Courses</title>
+    <title>Developer saurav</title>
     <link rel="stylesheet" href="style.css">
 <link rel="me" href="https://www.blogger.com/profile/18241178981162942797" />
 <meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
@@ -58,10 +58,12 @@
     padding: 20px;
     transition: left 0.3s;
 }
-.wrapper button{
-    border: none;
+ .wrapper .login-btn{
     width: 70px;
     height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 2rem;
     color: rgb(0, 0, 0);
     cursor: pointer;
@@ -136,9 +138,7 @@
 .menu-bar i {
     display: block;
     border-top: 3px solid #444444;
-    border-bottom: 3px solid 
-
-#444444;
+    border-bottom: 3px solid #444444;
 }
 .menu-bar i::after {
     display: block;
@@ -312,13 +312,94 @@
     justify-content: space-between;
 }
 
+
+</style>
+<style>
+        
+    .popup2 .buttons{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .popup2 .buttons a{
+        text-decoration: none;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .popup2 {
+        display: none;
+        position: fixed;
+        align-items: center;
+        justify-content: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        width: 20rem;
+        height: auto;
+    }
+    .popup2  .google{
+        margin-top: 1rem;
+        color: white;
+        background-color: #000000;
+        border: none;
+        height: 2rem;
+        width: 15rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .popup2  .google img{
+        width: 25px;
+    }
+    .popup2  .email img{
+        width: 25px;
+    }
+    .popup2  .email{
+        margin-top: 1rem;
+        color: white;
+        background-color: rgb(91, 91, 236);
+        border: none;
+        height: 2rem;
+        width: 15rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .popup2 button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        
+    }
+
+    .login-btn {
+        padding: 10px 20px;
+        background-color: #3498db;
+        
+        border: none;
+        cursor: pointer;
+    }
 </style>
 <body>
    
         <div class="conatiner2">
         <div class="wrapper">
             <div class="logo">
-                <a href="https://sauravb0301.blogspot.com/"><img src="https://i.ibb.co/nkvwsVG/lo.png" alt="dev-saurav"> </a>
+                <a href="#"><img src="https://i.ibb.co/nkvwsVG/lo.png" alt="dev-saurav"> </a>
             </div>
             
             <div class="navbar">
@@ -334,12 +415,14 @@
                 </nav>
                 
             </div>
-            <a href=""><button>Login</button></a>
+            <button class="login-btn" onclick="openpopup2()">Login</button>
             <div class="menu-bar">
                 <button><i></i></button>
             </div>
         </div>
+        
     </div>
+    
     <style>
         
     </style>
@@ -356,7 +439,7 @@
 
       <div class="course">
         <div class="back">
-            <a href=""><img src="https://i.ibb.co/JzQsxf3/CODE-TO-DREAM.png">
+            <a href=""><img src="CODE TO DREAM.png">
             <div class="text">
                 <h3>Full Stack Development</h3>
                 <p>Saurav Thakur</p>
@@ -364,6 +447,37 @@
             </div>
         </div>
       </div>
+      
+<div id="loginpopup2" class="popup2">
+    <span class="close-btn" onclick="closepopup2()">X</span>
+    <div class="buttons">
+    <h2>Login To Developer Saurav</h2>
+    <button onclick="signUpWithGoogle()" class="google"><a href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?redirect_uri=https%3A%2F%2Fauthenticate.ongraphy.com%2Ft%2Fpublic%2Fgoogle%2Fredirect&response_type=code%20id_token&scope=email%20profile%20openid&openid.realm&include_granted_scopes=true&client_id=771122676243-cb11avd40vp8p9mblpks64a2efll2jou.apps.googleusercontent.com&ss_domain=https%3A%2F%2Fauthenticate.ongraphy.com&fetch_basic_profile=true&gsiwebsdk=2&flowName=GeneralOAuthFlow&prompt=select_account&state=https%3A%2F%2Fdeveloperrahul.graphy.com%7C%7C%7B%22source%22%3A%22landing_page%22%2C%22platform%22%3A%22web%22%2C%22sourceId%22%3Anull%7D%7C%7Cnull%7C%7Cnull%7C%7Cnull&service=lso&o2v=1&theme=glif"> <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png"> Sign Up with Google</a></button>
+    <button onclick="signUpWithEmail()" class="email"><a href="https://mlx3lspc9ed5.i.optimole.com/cb:GgYV.35093/w:auto/h:auto/q:mauto/f:best/https://www.bluehost.com/blog/wp-content/uploads/2023/07/What-is-a-404-error-code.png" ><img src="https://cdn-icons-png.flaticon.com/512/3178/3178158.png"> Sign Up with Email</a></button></div>
+</div>
+
+<script>
+    function openpopup2() {
+        document.getElementById('loginpopup2').style.display = 'block';
+    }
+
+    function closepopup2() {
+        document.getElementById('loginpopup2').style.display = 'none';
+    }
+
+    function signUpWithGoogle() {
+        // Add your Google sign-up logic here
+        alert('Sign up with Google');
+        closepopup2();
+    }
+
+    function signUpWithEmail() {
+        // Add your email sign-up logic here
+        alert('Sign up with Email');
+        closepopup2();
+    }
+</script>
+
 <style>
     .course{
         margin-top: 2rem;
