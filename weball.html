@@ -506,6 +506,40 @@
         border-color: #000;
         width: 30rem;
     }
+    @media screen and (max-width: 768px) {
+        .webinar{
+            display: flex;
+            flex-direction: column;
+            margin: 1rem;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .webinar .images{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .webinar .images h2{
+            font-size: 1rem;
+            display: none;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .webinar .images img{
+            width: 250px;
+        }
+        .webinar .text{
+            margin-top: 2rem;
+            border: 1rem;
+            color: #000000;
+        }
+        .webinar .text .box{
+            width: 18rem;
+            border-color: #000;
+        }
+    }
+
 </style>
 <script>
     function toggleDiv(hiddenDiv2) {
